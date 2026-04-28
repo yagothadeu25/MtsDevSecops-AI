@@ -445,3 +445,4 @@ Execute fases em paralelo quando possível. Relatório ao final de cada fase.
 ## Licença
 
 Licenciado sob [MIT License](LICENSE).
+
