@@ -1,0 +1,37 @@
+httprr trace v1
+369 1564
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 165
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o3-mini-high","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"What kind of mammal am I?","type":"text"}]}]}HTTP/2.0 200 OK
+Content-Length: 1108
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:48:38 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111318-FYS2WjMv7q5rhLLciPiB","provider":"OpenAI","model":"openai/o3-mini-high","object":"chat.completion","created":1769111318,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"A Pomeranian is a breed of dog, which is a type of mammal. More specifically, dogs (including Pomeranians) are part of the Canidae family and are classified under the species Canis lupus familiaris. As a mammal, you have characteristics like having fur, being warm-blooded, and nurturing your young with milk, all of which are true for dogs.","refusal":null,"reasoning":null}}],"usage":{"prompt_tokens":19,"completion_tokens":273,"total_tokens":292,"cost":0.0012221,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0012221,"upstream_inference_prompt_cost":0.0000209,"upstream_inference_completions_cost":0.0012012},"completion_tokens_details":{"reasoning_tokens":192,"image_tokens":0}}}

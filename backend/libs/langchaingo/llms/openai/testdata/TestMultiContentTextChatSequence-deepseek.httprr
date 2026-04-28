@@ -1,0 +1,25 @@
+httprr trace v1
+398 2712
+POST https://api.deepseek.com/chat/completions HTTP/1.1
+Host: api.deepseek.com
+User-Agent: langchaingo-httprr
+Content-Length: 195
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"deepseek-reasoner","messages":[{"role":"user","content":"Name some countries"},{"role":"assistant","content":"Spain and Lesotho"},{"role":"user","content":"Which if these is larger?"}]}HTTP/2.0 200 OK
+Content-Length: 2120
+Access-Control-Allow-Credentials: true
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:57:05 GMT
+Server: elb
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: origin, access-control-request-method, access-control-request-headers
+Via: 1.1 812385435e4a24499dabb443924e6b50.cloudfront.net (CloudFront)
+X-Amz-Cf-Id: qkR3BA5kOki-QKQ08xAvX0h1Q58ZTky_EfMKzwMBkm4bcBgCQ0q8PA==
+X-Amz-Cf-Pop: JFK50-P7
+X-Cache: Miss from cloudfront
+X-Content-Type-Options: nosniff
+X-Ds-Trace-Id: 692c328f697cf28e1d383715438741da
+
+{"id":"78242fc0-b6c8-4a4d-b0d4-5ff55335e53c","object":"chat.completion","created":1769111825,"model":"deepseek-reasoner","choices":[{"index":0,"message":{"role":"assistant","content":"**Spain** is significantly larger than **Lesotho**.\n\n*   **Spain:** Approximately 505,990 km² (195,364 mi²)\n*   **Lesotho:** Approximately 30,355 km² (11,720 mi²)\n\nSpain is over **16 times larger** in land area than Lesotho.\n\n**Additional Context:**\n*   **Spain** is a country in southwestern Europe with diverse geography, including coastlines, plains, and mountains.\n*   **Lesotho** is a small, landlocked kingdom entirely surrounded by South Africa, known for its high-altitude terrain.","reasoning_content":"Okay, the user asked which of the two mentioned countries, Spain and Lesotho, is larger. Let me recall their sizes. Spain is in Europe, and I remember it’s about 500,000 square kilometers. Lesotho is a small country in southern Africa, completely surrounded by South Africa. I think it’s much smaller, maybe around 30,000 square kilometers. \n\nWait, I should verify the exact areas to be sure. Let me quickly check my mental database. Spain’s area is approximately 505,990 square kilometers, while Lesotho is about 30,355 square kilometers. That confirms Spain is significantly larger. \n\nAlso, considering the context, the user might not just want the answer but a clear comparison. Including population and geographical features could add helpful context. Spain has a diverse landscape and a larger population, whereas Lesotho is mountainous and less populated. \n\nI’ll structure the response to state the answer upfront, then provide the area numbers and extra details to highlight the difference. Keeping it concise but informative would best meet the user’s needs."},"logprobs":null,"finish_reason":"stop"}],"usage":{"prompt_tokens":21,"completion_tokens":342,"total_tokens":363,"prompt_tokens_details":{"cached_tokens":0},"completion_tokens_details":{"reasoning_tokens":220},"prompt_cache_hit_tokens":0,"prompt_cache_miss_tokens":21},"system_fingerprint":"fp_eaab8d114b_prod0820_fp8_kvcache"}

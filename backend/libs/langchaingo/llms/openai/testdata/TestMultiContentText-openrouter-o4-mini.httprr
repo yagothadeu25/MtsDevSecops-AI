@@ -1,0 +1,59 @@
+httprr trace v1
+364 7158
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 160
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o4-mini","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"What kind of mammal am I?","type":"text"}]}]}HTTP/2.0 200 OK
+Content-Length: 6702
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:48:35 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111315-jARZaneBHC7dVL3UsxdW","provider":"OpenAI","model":"openai/o4-mini","object":"chat.completion","created":1769111315,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"You’re a domestic dog (Canis lupus familiaris), a carnivorous mammal in the family Canidae. As a Pomeranian you belong to:\n\n• Kingdom: Animalia  \n• Phylum: Chordata  \n• Class: Mammalia  \n• Order: Carnivora  \n• Family: Canidae  \n• Genus: Canis  \n• Species: C. lupus (subspecies familiaris)  \n\nKey mammalian traits you share with all dogs include:  \n– Warm-blooded metabolism  \n– Fur (your thick double coat)  \n– Live birth and nursing your young with mammary glands  \n– A four-chambered heart and diaphragm for efficient breathing  \n\nAs a Pomeranian—one of the toy breeds—you’re simply a small-sized domestic dog, bred for companionship, but biologically you’re every bit the same canine mammal as any other breed.","refusal":null,"reasoning":"**Classifying the Pomeranian**\n\nThe user, identifying as a Pomeranian, is essentially a small dog, which falls under the domestic dog category, or Canis lupus familiaris. So, the answer to their question is that they are a carnivorous mammal belonging to the family Canidae. Getting into the classification: they belong to the Kingdom Animalia, Phylum Chordata, Class Mammalia, and so forth. I should also highlight their mammal characteristics such as being warm-blooded, having fur, and giving live births.**Finalizing Dog Classification**\n\nI’m ready to finalize the answer: as a Pomeranian, you're definitely a domesticated dog, which is a type of carnivorous mammal. I should mention that you belong to the Canidae family and are a subspecies of the gray wolf. To provide further insight, I can highlight some characteristics like being primarily carnivorous, having a keen sense of smell, and being social pack animals. So, a straightforward response would be: \"You're a domesticated dog!\"","reasoning_details":[{"format":"openai-responses-v1","index":0,"type":"reasoning.summary","summary":"**Classifying the Pomeranian**\n\nThe user, identifying as a Pomeranian, is essentially a small dog, which falls under the domestic dog category, or Canis lupus familiaris. So, the answer to their question is that they are a carnivorous mammal belonging to the family Canidae. Getting into the classification: they belong to the Kingdom Animalia, Phylum Chordata, Class Mammalia, and so forth. I should also highlight their mammal characteristics such as being warm-blooded, having fur, and giving live births.**Finalizing Dog Classification**\n\nI’m ready to finalize the answer: as a Pomeranian, you're definitely a domesticated dog, which is a type of carnivorous mammal. I should mention that you belong to the Canidae family and are a subspecies of the gray wolf. To provide further insight, I can highlight some characteristics like being primarily carnivorous, having a keen sense of smell, and being social pack animals. So, a straightforward response would be: \"You're a domesticated dog!\""},{"id":"rs_0ee60f237a4bc2760169727f13be748195aadf2af1d7c49109","format":"openai-responses-v1","index":0,"type":"reasoning.encrypted","data":"gAAAAABpcn8aq6XoyHLeb2e8iCZ4EJT565E4ef8bmra-1fB95WT3-5cTzUPL9JT46Owfl2XXfyuriTn3fXG0GsxayCJotzlHQCsz7pdzQIEdFU7ccGLLiORyV-Bpk9e5yQh145TrC3CaahmltWjYO025RdAMlbGAU5Pz_qgel2OPF7cZrKFjcSlx8DTv7FZu5mQ6z80GY911I_5zDbWvj-GJGtzzuamtk-KMqSufRrXLeAHSqCbqkgbrMd34_UqZUb8_6EgXHmwW_NdNhxOdOcV870NaPG88Crtsm5qIpo27fLBbLAa0uY223oqjR7ofeCnP_6qVaLpq1Ifr7u-DcaooT639XlrVLd0d-4ubVqxmvVJ9QVXPGT8ViFwE33__RGOlDinIsXt0BDmTQqfNUFgEa1SmzglgUcYeNQzls-u4llG1JkcD_L6eLP2aSm5kViCy0yTyHxSN92WHkvq8P2kyAZZkUNynkTDz8matwX6qMaYwIU4YXMVp7MHVelRg_cBMvaBJehXKT_gIMvVKevXAYD9g_KH9KhEGCGNlg3vYySguO-pAvcrCcbHkZxcfOldUwpWIXgxXtBdx1l8HWL3zyXBSzqbVQsS40ROsdITHCd4aGxSLRFojUZ01HFfVvYXbBt417S1uV_lPaDpMGslYnsx7hlMnvlrzMcgWFJwOo7bz2BPOHUKWQw5FI7sd3Ai3p75qTlcz_jBt2e-u-Dh-GLzkxmkeWpTevUZu8_SlcNpgjRUrrYPmw-5XLSgk5vPtJhk8oTGHuJ8G9h5d9ZYTgKMbvovHo_4eeuODyjJuB80oUtxcfkgyUtPPBNEYMrhux5dd5jXKBW9gtteVKrCcQJqLVEfgD8bMfitLUunk8_Ho0z4muPB105lCcAdBB6HQGP65Sp0DrEDwZyC9BKscNral3OWngGW4pO2HdnS5MK1KfKSuHck80SrPjwgpIKZNGYqzqNUXtIvLD59cPrhrAtH7DXZOPCwlXy01aabY7rKlwAHWa11YKz1BY2zlsr4xiCi3FasSeptLq_LwbGdGdLShBffJbWI1eJvOvrBCt7iA4xUiIwu3Gl4LNGPIstf_RbXcJugrG1WJUIMMTvFD_2ozB0Qct0oZLfYtoCseaTYZR2YkI-TOwHENQVGiHkJVmYhqJgonTGbzCHVt3i--mcDJvi97R8PNBn48kfoZ2HzyRln-eg6ZijPfvb_dcjop7PFQg-U8I-PwJqAQHGs2LGfOwdle00z8RjZvgibr_k8UCuagdyHCOKt6gZTDYv5Yjeg03YEzvTzfprHhv50WWhRbMkOwFKKKSwfGI3bhPMh_MWqRnvCPp_hOu3U3REnunThfj9QKSRrgxPTUnvip3uQmFDipkY3deN4L9RVXQsvbF1nKOKiQdi4iFpADcvxiwvQK3UbK8OmBeomf5LrkYGE8QC61pg-ariBu2iiFaZ0h2B4hzmrW-WUdE-tfPMz-BvsF35iV9FAmxewElLsKUtyd6b4SQz6Zoho6s6f-wAeB5I19fibLK2cwOBrGjkomcM-7IicqQ4XNG6gw6M-OlQi0aldPZiGk1w8PBfYEYHmAHwDzrNF8xoBJTgJwD9ollAuZKYxRDp5MWO-ugwwzyQz9_GF8Hx2l8KsCJfbw8pgX6krQHDr75rMBe9TIloaQurG4g8QIuGepTriDMptGMDFXRfArbN24iOOE5M9I5ZHWiC4kC90wAheII1Knag80Fh-ErF5yiDwi_8GhGwruahOhSAcHNWj-boxMlfuATQ3mQXfBdqBbXwt5qavnvLIW3IIdn8eFps82tcyTMgkhQH4CMXapUWXYjNMYvsauGO6jY_dfcNQRva91cT-CQNYqgS4_wd4uRD9BkjUhSrSB0v4xA7PfnOAyIVk4yufPS5OC2BnVuz1TIBUy7LVusLw3LoMRjF4D1SyvuOyc0HgqzPAwuD1aooE6qZlRjFNkN7_uhLmX7GsAqRJvGoQjgfkyBoOs8sOTXi2yQapWaXUqpU_kqlUDLqlWQeBcccpDmE9V7dHzxdHLY7RrFizdZxTJkR4gs7zB9xdWr8KlF9jVJMCWlRLWViMBLVEvJGefmIm3lGEDoVNasFmc0wv2KvrQtpmnA4Bt7iBHj3kXsbnjWs3ncp01e-JCL72-RZh8dYCZW-9clvpQNllDQvVV0pkL8eiypY_nMNHAlqlgkxvb_jMXcUVDO2XWwTA2qpz-zrMpiiDAoMuke3AVkqVYCSSi6ndE1y6qt_uXp0pci9V2o5TwJPTN9yTp5NCXNmtufY5j9rloW9NkNaABj7X0irjQ0lgFIpAlcyFqOauLmg8og4AtoZ6MPhTCxPiPRFgyqz6ABV-ng7krQ9dukh6WeahFAhVP07zjaGjzYiKFDSWaHucPTaAVk5zh3YV6VMPwD1SV9-Tkkvgjf5R2GNK2NWaiXZh7jpW2zKLarH86lCeGnoUYOTnA26Xyny6qnDjIka8aTV_XadTQP1IP00CsKNlSMuVAlrGQVPbRqOCIGfPnALcXQZhT1x08MUpo-Q3PO90Qs1m59RfzmDUrYrBQJaNN0SSWDnmZ4j-KxiDYT2fvfaT4MkNooUVjkBYcfXfoJhkhFKFCpzE4GxbJ2daByTyVXsqOpmkT_mIAsg79b5wMip_EroPtXEsvD6OIm1RuwQb6gQxCN_EjPZcWOnMIuBT8lk1nHJjnJ3OUwdXokkrpBK7XbMx6J_UqbxujR71faYkJ0jhZWitr4Sk6Bbf85L_KEQgQS5w3AoA7JUBazsziL-_0vf7EzyGhgjMorTRwGYMpZwZM7bM="}]}}],"usage":{"prompt_tokens":19,"completion_tokens":517,"total_tokens":536,"cost":0.0022957,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0022957,"upstream_inference_prompt_cost":0.0000209,"upstream_inference_completions_cost":0.0022748},"completion_tokens_details":{"reasoning_tokens":320,"image_tokens":0}}}

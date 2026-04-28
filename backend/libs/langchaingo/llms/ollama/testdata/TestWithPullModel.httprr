@@ -1,0 +1,28 @@
+httprr trace v1
+258 128
+POST http://localhost:11434/api/pull HTTP/1.1
+Host: localhost:11434
+User-Agent: langchaingo-httprr
+Content-Length: 73
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"qwen3:8b","username":"","password":"","stream":false,"name":""}HTTP/1.1 200 OK
+Content-Length: 20
+Content-Type: application/json
+Date: Tue, 10 Mar 2026 10:20:54 GMT
+
+{"status":"success"}316 963
+POST http://localhost:11434/api/chat HTTP/1.1
+Host: localhost:11434
+User-Agent: langchaingo-httprr
+Content-Length: 130
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"qwen3:8b","messages":[{"role":"user","content":"Say hello"}],"stream":false,"format":"","options":{"num_predict":16384}}HTTP/1.1 200 OK
+Content-Length: 839
+Content-Type: application/json; charset=utf-8
+Date: Tue, 10 Mar 2026 10:21:00 GMT
+
+{"model":"qwen3:8b","created_at":"2026-03-10T10:21:00.75177Z","message":{"role":"assistant","content":"Hello! How can I assist you today? 😊","thinking":"Okay, the user said \"Say hello /think\". First, I need to understand what they're asking for. They want me to greet them, but they added \"/think\" which might be a command or a note. Maybe they're testing if I can process commands or just want a friendly greeting. I should respond in a friendly and helpful manner, acknowledging their message. Since the user might be checking my responsiveness, I'll make sure to greet them warmly and offer assistance. Let me keep it simple and positive.\n"},"done":true,"done_reason":"stop","total_duration":4898636708,"load_duration":109000958,"prompt_eval_count":119,"prompt_eval_duration":506247125,"eval_count":12,"eval_duration":254243667}

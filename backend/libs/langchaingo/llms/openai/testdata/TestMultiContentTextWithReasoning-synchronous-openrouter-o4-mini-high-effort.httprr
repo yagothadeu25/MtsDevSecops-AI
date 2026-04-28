@@ -1,0 +1,51 @@
+httprr trace v1
+404 4337
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 200
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o4-mini-high","messages":[{"role":"user","content":"What is the factorial of 5? Show your work. Think before you answer."}],"max_completion_tokens":8192,"reasoning":{"effort":"high"}}HTTP/2.0 200 OK
+Content-Length: 3881
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:49:59 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111399-DL3Mn9R4QDk22mspfh69","provider":"OpenAI","model":"openai/o4-mini-high","object":"chat.completion","created":1769111399,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"The factorial of a positive integer n is defined as  \nn! = n × (n–1) × (n–2) × … × 2 × 1\n\nFor n = 5:\n\n1. 5! = 5 × 4 × 3 × 2 × 1  \n2. Compute step by step:  \n   • 5 × 4 = 20  \n   • 20 × 3 = 60  \n   • 60 × 2 = 120  \n   • 120 × 1 = 120  \n\nTherefore, 5! = 120.","refusal":null,"reasoning":"**Calculating the factorial of 5**\n\nThe question asks for the factorial of 5 and to show the work behind it. So, I think it’s best to break it down step by step. \n\nThe calculation is:  \n- 5! = 5 × 4 × 3 × 2 × 1  \n- Moving through the multiplication: 5 × 4 = 20, 20 × 3 = 60, 60 × 2 = 120, and 120 × 1 = 120. \n\nTherefore, the factorial of 5 is 120. That's a clear answer!","reasoning_details":[{"format":"openai-responses-v1","index":0,"type":"reasoning.summary","summary":"**Calculating the factorial of 5**\n\nThe question asks for the factorial of 5 and to show the work behind it. So, I think it’s best to break it down step by step. \n\nThe calculation is:  \n- 5! = 5 × 4 × 3 × 2 × 1  \n- Moving through the multiplication: 5 × 4 = 20, 20 × 3 = 60, 60 × 2 = 120, and 120 × 1 = 120. \n\nTherefore, the factorial of 5 is 120. That's a clear answer!"},{"id":"rs_0f1e7e06c71bf6d70169727f681d4481959ed4a62be2f717f6","format":"openai-responses-v1","index":0,"type":"reasoning.encrypted","data":"gAAAAABpcn9tUz0UILsvOjklP1AgTCNZJLPiO1dJ7fCJExGd0TTINq0fKq34_6TGANBZ968n85JQVM_JPzk2dwMZZKMzfzJRQ5fjyXmC5hojvOmcILJBMTpYsfGOb3DTyujBv-I_jaCya_-H8VvdQsrnfwQpelSMfqn3z67TOsLdxMDmg6FmuFzQ153FNPMQ7htGQJYxdxJebCY0eIx7uUdmBAB18Ye6FEg5Fr1qckH6a2IXdGuqRFBY6CYxQg9BpQjV5HtPeirzA2Qnd-N3Am-jYFDVzSdzB2fTdhbLdSSjUe2_7hRGjpT2IfLPZ_AgObUhdbFj5dJwISOeXeEGQkacrg7M2TaF7lj7tqNCEulrbKXTQ-D5YP2MoJP2dr83C5E3NT1it8sc0tMuZie9zJca6kUTnzFAbsCtMqLtySJAuR3Odn3VfnPw4qeLfcwtbv7dFj4apw-wrR70p1BcbNcmYCjl3W8x-cHMdrvwcRMGo9rP5UKjiQZYR05tzcbXzPPRyblDKu_mC8dC1hOhm3yFqM2chCleRfqUKhFz4n9p1l7MsYM0moignslpp4hgK5B1K5sKYOvZBeb7zIoCY0x7erEF3VmJmMUSiyvDu7YMM0dSFp7wmZoEug0yR3uWTA9CnVr2MVYtuRo2kiCpqTeOcpmyEaBqDiPH_7qxPxOH4AprN-xeCtOfqNHU45B-B-dFuFGg35cOUmpykXP783UYt1K-qjQ4TJDj088CAgDqWEHzH36r-8psMFsyiavKN6Vg26UvxkPnQepF4MuSwjL_ihkM1HDI_K-5YpZfSXnnYGD1gXNaI-QT1obFS888-IGzGDnL2VTiwafYHd8feYSXQGu4xvb1RWENjJmcwc2x9rizWAVLgFrHEFdAcPY8n0tPmnUXf2ZoWcFTUUCapL_hOhBtbEsAr7VY4IYESAbAHzrQJkruZlkItGdOqkic1hRGo1UkzV_TB-l6mgIvR4OwNywdjgPeTLIPfQSjB3jpR5v8uYHNC8hdVF-ibxEKyhOGT-lzd-JRQxpMMxSDy_NKtXojWxc8bMvGovS8hCjZ2Fch89lrNXBtJ2xYBQ73pt-oTQO05gWB-aGDdFv_H5wTfhA6Z3l_1h-84dmtiOTGAgNxavvJ1IkLp2FKuxzPzHP3T25RJSnO_2cTS39YUOWWxcOQ_RAoYIWGxSh_gpUVTJn_h__7BARbrvGG-7fILmWh7oG0hy5hECwMWBNyxNlrTgoovhCJt7Bc6kata_4BPT7Kq8LTi0C-JIWUKKRyImNdo-0-XBcCl62X2G0Vs9pPpTxSAuzR9Qicvx5_XbcuYw2bZNeBLehdaRCw08cIGIqlR_-bk4vJ8qi3J0WlJ2coRDcq4DifURMFUdizgybsTE7M7MCIhiRQA38A61WDhLOXbq0ZQZN6dPufT2CDcL9TM-UGGubVAnmCNm7FTcDH6hlAzFXPVbTe957o9Y7FOwS9zxS2p1yamm7onxEUP6rk4sd57zW_RQzsS_kOsa_AV0SrUK-6h1m2JLsFKXKCQtyczD2O8Hn-BYASIWs8IdGSaRAtrgiQoYcNE8bCvgCa23QICocxjylilE1G5qgWwqiJQh6cvUPfGNtFAqo9POYCa9ncaSO2aSJCECfLu90JcepkT0L-DWZcLrbmdLvsT4VIC6cyLaQoIGh0ju-VzjTNusNrEi2XZWcS_N8pTJrMZAn6KNMZgvU="}]}}],"usage":{"prompt_tokens":23,"completion_tokens":322,"total_tokens":345,"cost":0.0014421,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0014421,"upstream_inference_prompt_cost":0.0000253,"upstream_inference_completions_cost":0.0014168},"completion_tokens_details":{"reasoning_tokens":192,"image_tokens":0}}}

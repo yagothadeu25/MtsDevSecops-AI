@@ -1,0 +1,846 @@
+package llms
+
+import (
+	"encoding/json"
+	"testing"
+
+	"github.com/vxcontrol/langchaingo/llms/reasoning"
+
+	"github.com/google/go-cmp/cmp"
+	"sigs.k8s.io/yaml"
+)
+
+type unknownContent struct{}
+
+func (unknownContent) isPart() {}
+
+func TestUnmarshalYAML(t *testing.T) {
+	t.Parallel()
+	tests := []struct {
+		name    string
+		input   string
+		want    MessageContent
+		wantErr bool
+	}{
+		{
+			name: "single text part",
+			input: `role: user
+text: Hello, world!
+`,
+			want: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name: "multiple parts",
+			input: `role: user
+parts:
+- type: text
+  text: Hello!, world!
+- type: image_url
+  image_url:
+    url: http://example.com/image.png
+- type: image_url
+  image_url:
+    url: http://example.com/image.png
+    detail: high
+- type: binary
+  binary:
+    mime_type: application/octet-stream
+    data: SGVsbG8sIHdvcmxkIQ==
+- tool_response:
+    tool_call_id: "123"
+    name: hammer
+    content: hit
+  type: tool_response
+`,
+			want: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello!, world!"},
+					ImageURLContent{URL: "http://example.com/image.png"},
+					ImageURLContent{URL: "http://example.com/image.png", Detail: "high"},
+					BinaryContent{
+						MIMEType: "application/octet-stream",
+						Data:     []byte("Hello, world!"),
+					},
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name: "Unknown content type",
+			input: `
+role: user
+parts:
+  - type: unknown
+    data: some data
+`,
+			want: MessageContent{
+				Role: "user",
+			},
+			wantErr: true,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			var mc MessageContent
+			err := yaml.Unmarshal([]byte(tt.input), &mc)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("UnmarshalYAML() error = %v, wantErr %v", err, tt.wantErr)
+				t.Log("in:", tt.input)
+				return
+			}
+			if diff := cmp.Diff(tt.want, mc); diff != "" {
+				t.Errorf("UnmarshalYAML() mismatch (-want +got):\n%s", diff)
+			}
+		})
+	}
+}
+
+func TestMarshalYAML(t *testing.T) {
+	t.Parallel()
+	tests := []struct {
+		name    string
+		input   MessageContent
+		want    string
+		wantErr bool
+	}{
+		{
+			name: "single text part",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+				},
+			},
+			want: `role: user
+text: Hello, world!
+`,
+			wantErr: false,
+		},
+		{
+			name: "multiple parts",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+					ImageURLContent{URL: "http://example.com/image.png"},
+					BinaryContent{
+						MIMEType: "application/octet-stream",
+						Data:     []byte("Hello, world!"),
+					},
+					ToolCallResponse{
+						ToolCallID: "123",
+						Name:       "hammer",
+						Content:    "hit",
+					},
+				},
+			},
+			want: `parts:
+- text: Hello, world!
+  type: text
+- image_url:
+    url: http://example.com/image.png
+  type: image_url
+- binary:
+    data: SGVsbG8sIHdvcmxkIQ==
+    mime_type: application/octet-stream
+  type: binary
+- tool_response:
+    content: hit
+    name: hammer
+    tool_call_id: "123"
+  type: tool_response
+role: user
+`,
+			wantErr: false,
+		},
+		{
+			name: "unknown content type",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					unknownContent{},
+				},
+			},
+			want: "parts:\n- {}\nrole: user\n",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			got, err := yaml.Marshal(tt.input)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("MarshalYAML() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if diff := cmp.Diff(tt.want, string(got)); diff != "" {
+				t.Errorf("MarshalYAML() mismatch (-want +got):\n%s", diff)
+			}
+		})
+	}
+}
+
+func TestUnmarshalJSONMessageContent(t *testing.T) { //nolint:funlen
+	t.Parallel()
+	tests := []struct {
+		name    string
+		input   string
+		want    MessageContent
+		wantErr bool
+	}{
+		{
+			name:  "single text part",
+			input: `{"role":"user","text":"Hello, world!"}`,
+			want: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+				},
+			},
+
+			wantErr: false,
+		},
+		{
+			name:  "multiple parts",
+			input: `{"role":"user","parts":[{"text":"Hello, world!","type":"text"},{"type":"image_url","image_url":{"url":"http://example.com/image.png"}},{"type":"binary","binary":{"data":"SGVsbG8sIHdvcmxkIQ==","mime_type":"application/octet-stream"}}]}`,
+			want: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+					ImageURLContent{URL: "http://example.com/image.png"},
+					BinaryContent{
+						MIMEType: "application/octet-stream",
+						Data:     []byte("Hello, world!"),
+					},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name:  "Unknown content type",
+			input: `{"role":"user","parts":[{"type":"unknown","data":"some data"}]}`,
+			want: MessageContent{
+				Role: "user",
+			},
+			wantErr: true,
+		},
+		{
+			name:  "tool use",
+			input: `{"role":"assistant","parts":[{"type":"text","text":"Hello there!"},{"type":"tool_call","tool_call":{"id":"t42","type":"function","function":{"name":"get_current_weather","arguments":"{ \"location\": \"New York\" }"}}}]}`,
+			want: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello there!"},
+					ToolCall{
+						ID:   "t42",
+						Type: "function",
+						FunctionCall: &FunctionCall{
+							Name:      "get_current_weather",
+							Arguments: `{ "location": "New York" }`,
+						},
+					},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name:  "tool response",
+			input: `{"role":"user","parts":[{"type":"tool_response","tool_response":{"tool_call_id":"123","name":"hammer","content":"hit"}}]}`,
+			want: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name:  "text with reasoning",
+			input: `{"role":"assistant","parts":[{"type":"text","text":"The answer is 42","reasoning":{"content":"Let me think about this...","signature":"c2lnbmF0dXJl"}}]}`,
+			want: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					TextContent{
+						Text: "The answer is 42",
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Let me think about this...",
+							Signature: []byte("signature"),
+						},
+					},
+				},
+			},
+			wantErr: false,
+		},
+		{
+			name:  "tool call with reasoning",
+			input: `{"role":"assistant","parts":[{"type":"tool_call","tool_call":{"id":"tc01","type":"function","function":{"name":"search","arguments":"{}"},"reasoning":{"content":"Need to search for this","signature":"dGVzdA=="}}}]}`,
+			want: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						ID:   "tc01",
+						Type: "function",
+						FunctionCall: &FunctionCall{
+							Name:      "search",
+							Arguments: "{}",
+						},
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Need to search for this",
+							Signature: []byte("test"),
+						},
+					},
+				},
+			},
+			wantErr: false,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			var mc MessageContent
+			err := mc.UnmarshalJSON([]byte(tt.input))
+			if (err != nil) != tt.wantErr {
+				t.Errorf("UnmarshalJSON() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if diff := cmp.Diff(tt.want, mc); diff != "" {
+				t.Errorf("UnmarshalJSON() mismatch (-want +got):\n%s", diff)
+			}
+		})
+	}
+}
+
+func TestMarshalJSONMessageContent(t *testing.T) { //nolint:funlen
+	t.Parallel()
+	tests := []struct {
+		name    string
+		input   MessageContent
+		want    string
+		wantErr bool
+	}{
+		{
+			name: "single text part",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+				},
+			},
+			want:    `{"role":"user","text":"Hello, world!"}`,
+			wantErr: false,
+		},
+		{
+			name: "multiple parts",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+					ImageURLContent{URL: "http://example.com/image.png"},
+					BinaryContent{
+						MIMEType: "application/octet-stream",
+						Data:     []byte("Hello, world!"),
+					},
+				},
+			},
+			want:    `{"role":"user","parts":[{"text":"Hello, world!","type":"text"},{"type":"image_url","image_url":{"url":"http://example.com/image.png"}},{"type":"binary","binary":{"data":"SGVsbG8sIHdvcmxkIQ==","mime_type":"application/octet-stream"}}]}`,
+			wantErr: false,
+		},
+		{
+			name: "Unknown content type",
+			input: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					unknownContent{},
+				},
+			},
+			want:    `{"role":"user","parts":[{}]}`,
+			wantErr: false,
+		},
+		{
+			name: "text with reasoning",
+			input: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					TextContent{
+						Text: "The answer is 42",
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Let me think about this...",
+							Signature: []byte("signature"),
+						},
+					},
+				},
+			},
+			want:    `{"role":"assistant","parts":[{"reasoning":{"content":"Let me think about this...","signature":"c2lnbmF0dXJl"},"text":"The answer is 42","type":"text"}]}`,
+			wantErr: false,
+		},
+		{
+			name: "tool call with reasoning",
+			input: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						ID:   "tc01",
+						Type: "function",
+						FunctionCall: &FunctionCall{
+							Name:      "search",
+							Arguments: "{}",
+						},
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Need to search for this",
+							Signature: []byte("test"),
+						},
+					},
+				},
+			},
+			want:    `{"role":"assistant","parts":[{"type":"tool_call","tool_call":{"function":{"name":"search","arguments":"{}"},"id":"tc01","reasoning":{"content":"Need to search for this","signature":"dGVzdA=="},"type":"function"}}]}`,
+			wantErr: false,
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			got, err := json.Marshal(tt.input)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("MarshalJSON() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if err != nil {
+				t.Errorf("MarshalJSON() error = %v", err)
+			}
+			gotStr := string(got)
+			if diff := cmp.Diff(tt.want, gotStr); diff != "" {
+				t.Errorf("MarshalJSON() mismatch (-want +got):\n%s", diff)
+				t.Log("got:", gotStr)
+			}
+		})
+	}
+}
+
+// Test roundtripping for both JSON and YAML representations.
+func TestRoundtripping(t *testing.T) { // nolint:funlen // We make an exception given the number of test cases.
+	t.Parallel()
+	tests := []struct {
+		name         string
+		in           MessageContent
+		assertedJSON string
+		assertedYAML string
+	}{
+		{
+			name: "single text part",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello, world!"},
+				},
+			},
+			assertedJSON: `{"role":"user","text":"Hello, world!"}`,
+			assertedYAML: "role: user\ntext: Hello, world!\n",
+		},
+		{
+			name: "multiple parts",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					TextContent{Text: "Hello!, world!"},
+					ImageURLContent{URL: "http://example.com/image.png", Detail: "low"},
+					BinaryContent{
+						MIMEType: "application/octet-stream",
+						Data:     []byte("Hello, world!"),
+					},
+				},
+			},
+			assertedYAML: `parts:
+- text: Hello!, world!
+  type: text
+- image_url:
+    detail: low
+    url: http://example.com/image.png
+  type: image_url
+- binary:
+    data: SGVsbG8sIHdvcmxkIQ==
+    mime_type: application/octet-stream
+  type: binary
+role: user
+`,
+		},
+		{
+			name: "tool use",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						Type: "function",
+						ID:   "t01",
+						FunctionCall: &FunctionCall{
+							Name:      "get_current_weather",
+							Arguments: `{ "location": "New York" }`,
+						},
+					},
+				},
+			},
+		},
+		{
+			name: "multiple tool uses",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						Type: "function",
+						ID:   "tc01",
+						FunctionCall: &FunctionCall{
+							Name:      "get_current_weather",
+							Arguments: `{ "location": "New York" }`,
+						},
+					},
+					ToolCall{
+						Type:         "function",
+						ID:           "tc02",
+						FunctionCall: &FunctionCall{Name: "get_current_weather", Arguments: `{ "location": "Berlin" }`},
+					},
+				},
+			},
+			assertedJSON: `{"role":"assistant","parts":[{"type":"tool_call","tool_call":{"function":{"name":"get_current_weather","arguments":"{ \"location\": \"New York\" }"},"id":"tc01","type":"function"}},{"type":"tool_call","tool_call":{"function":{"name":"get_current_weather","arguments":"{ \"location\": \"Berlin\" }"},"id":"tc02","type":"function"}}]}`,
+			assertedYAML: `parts:
+- tool_call:
+    function:
+      arguments: '{ "location": "New York" }'
+      name: get_current_weather
+    id: tc01
+    type: function
+  type: tool_call
+- tool_call:
+    function:
+      arguments: '{ "location": "Berlin" }'
+      name: get_current_weather
+    id: tc02
+    type: function
+  type: tool_call
+role: assistant
+`,
+		},
+		{
+			name: "tool use with arguments",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{Type: "hammer", FunctionCall: &FunctionCall{Name: "hit", Arguments: `{ "force": 10 }`}},
+				},
+			},
+		},
+		{
+			name: "tool use with multiple arguments",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						Type:         "hammer",
+						FunctionCall: &FunctionCall{Name: "hit", Arguments: `{ "force": 10, "direction": "down" }`},
+					},
+				},
+			},
+		},
+		{
+			name: "tool response",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+				},
+			},
+		},
+		{
+			name: "multi-tool response",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+					ToolCallResponse{ToolCallID: "456", Name: "screwdriver", Content: "turn"},
+				},
+			},
+		},
+		{
+			name: "tool response with arguments",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+				},
+			},
+		},
+		{
+			name: "multi-tool response with arguments",
+			in: MessageContent{
+				Role: "user",
+				Parts: []ContentPart{
+					ToolCallResponse{ToolCallID: "123", Name: "hammer", Content: "hit"},
+					ToolCallResponse{ToolCallID: "456", Name: "screwdriver", Content: "turn"},
+				},
+			},
+		},
+		{
+			name: "text content with reasoning",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					TextContent{
+						Text: "Final answer",
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Reasoning process here",
+							Signature: []byte("sig123"),
+						},
+					},
+				},
+			},
+		},
+		{
+			name: "tool call with reasoning",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					ToolCall{
+						ID:   "tc_reasoning",
+						Type: "function",
+						FunctionCall: &FunctionCall{
+							Name:      "analyze",
+							Arguments: `{"data":"test"}`,
+						},
+						Reasoning: &reasoning.ContentReasoning{
+							Content:   "Tool reasoning here",
+							Signature: []byte("toolsig"),
+						},
+					},
+				},
+			},
+		},
+		{
+			name: "mixed content with reasoning",
+			in: MessageContent{
+				Role: "assistant",
+				Parts: []ContentPart{
+					TextContent{
+						Text: "Let me help",
+						Reasoning: &reasoning.ContentReasoning{
+							Content: "First, analyze the request",
+						},
+					},
+					ToolCall{
+						ID:   "tc_mixed",
+						Type: "function",
+						FunctionCall: &FunctionCall{
+							Name:      "get_info",
+							Arguments: `{}`,
+						},
+						Reasoning: &reasoning.ContentReasoning{
+							Content: "Then call the tool",
+						},
+					},
+				},
+			},
+		},
+	}
+
+	// Round-trip both JSON and YAML:
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			// JSON
+			jsonBytes, err := json.Marshal(tt.in)
+			if err != nil {
+				t.Errorf("MarshalJSON() error = %v", err)
+				return
+			}
+			if diff := cmp.Diff(tt.assertedJSON, string(jsonBytes)); diff != "" && tt.assertedJSON != "" {
+				t.Errorf("JSON mismatch (-want +got):\n%s", diff)
+			}
+			var mc MessageContent
+			err = mc.UnmarshalJSON(jsonBytes)
+			if err != nil {
+				t.Errorf("UnmarshalJSON() error = %v", err)
+				return
+			}
+			if diff := cmp.Diff(tt.in, mc); diff != "" {
+				t.Errorf("Roundtrip JSON mismatch (-want +got):\n%s", diff)
+				t.Logf("JSON: %s", jsonBytes)
+			}
+
+			// YAML
+			yamlBytes, err := yaml.Marshal(tt.in)
+			if err != nil {
+				t.Errorf("MarshalYAML() error = %v", err)
+				return
+			}
+			if diff := cmp.Diff(tt.assertedYAML, string(yamlBytes)); diff != "" && tt.assertedYAML != "" {
+				t.Errorf("YAML mismatch (-want +got):\n%s", diff)
+				t.Log("got:", string(yamlBytes))
+			}
+			mc = MessageContent{}
+			err = yaml.Unmarshal(yamlBytes, &mc)
+			if err != nil {
+				t.Errorf("UnmarshalYAML() error = %v", err)
+				return
+			}
+			if diff := cmp.Diff(tt.in, mc); diff != "" {
+				t.Errorf("Roundtrip YAML mismatch (-want +got):\n%s", diff)
+			}
+		})
+	}
+}
+
+func TestToolCallSerialization(t *testing.T) {
+	t.Parallel()
+	toolCall := ToolCall{
+		ID:   "test_id",
+		Type: "tool_call",
+		FunctionCall: &FunctionCall{
+			Name:      "getIpLocation",
+			Arguments: `{"ip":"8.8.8.8"}`,
+		},
+	}
+	b, err := json.Marshal(toolCall)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	var unmarshalToolCall ToolCall
+	if e := json.Unmarshal(b, &unmarshalToolCall); e != nil {
+		t.Fatal(e)
+	}
+	if diff := cmp.Diff(toolCall, unmarshalToolCall); diff != "" {
+		t.Errorf("")
+	}
+}
+
+func TestTextContentWithReasoningSerialization(t *testing.T) {
+	t.Parallel()
+	tests := []struct {
+		name string
+		tc   TextContent
+	}{
+		{
+			name: "text with full reasoning",
+			tc: TextContent{
+				Text: "Answer is here",
+				Reasoning: &reasoning.ContentReasoning{
+					Content:   "Thinking process",
+					Signature: []byte("signature_data"),
+				},
+			},
+		},
+		{
+			name: "text with partial reasoning",
+			tc: TextContent{
+				Text: "Simple answer",
+				Reasoning: &reasoning.ContentReasoning{
+					Content: "Simple thought",
+				},
+			},
+		},
+		{
+			name: "text without reasoning",
+			tc: TextContent{
+				Text: "Just text",
+			},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			b, err := json.Marshal(tt.tc)
+			if err != nil {
+				t.Fatalf("Marshal error: %v", err)
+			}
+
+			var unmarshalled TextContent
+			if err := json.Unmarshal(b, &unmarshalled); err != nil {
+				t.Fatalf("Unmarshal error: %v", err)
+			}
+
+			if diff := cmp.Diff(tt.tc, unmarshalled); diff != "" {
+				t.Errorf("Roundtrip mismatch (-want +got):\n%s", diff)
+				t.Logf("JSON: %s", string(b))
+			}
+		})
+	}
+}
+
+func TestToolCallWithReasoningSerialization(t *testing.T) {
+	t.Parallel()
+	tests := []struct {
+		name string
+		tc   ToolCall
+	}{
+		{
+			name: "tool call with full reasoning",
+			tc: ToolCall{
+				ID:   "tc_01",
+				Type: "function",
+				FunctionCall: &FunctionCall{
+					Name:      "search_web",
+					Arguments: `{"query":"test"}`,
+				},
+				Reasoning: &reasoning.ContentReasoning{
+					Content:   "Need to search online",
+					Signature: []byte("sig_data"),
+				},
+			},
+		},
+		{
+			name: "tool call with content only reasoning",
+			tc: ToolCall{
+				ID:   "tc_02",
+				Type: "function",
+				FunctionCall: &FunctionCall{
+					Name:      "calculate",
+					Arguments: `{"x":5,"y":10}`,
+				},
+				Reasoning: &reasoning.ContentReasoning{
+					Content: "Need to compute",
+				},
+			},
+		},
+		{
+			name: "tool call without reasoning",
+			tc: ToolCall{
+				ID:   "tc_03",
+				Type: "function",
+				FunctionCall: &FunctionCall{
+					Name:      "get_time",
+					Arguments: `{}`,
+				},
+			},
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			t.Parallel()
+			b, err := json.Marshal(tt.tc)
+			if err != nil {
+				t.Fatalf("Marshal error: %v", err)
+			}
+
+			var unmarshalled ToolCall
+			if err := json.Unmarshal(b, &unmarshalled); err != nil {
+				t.Fatalf("Unmarshal error: %v", err)
+			}
+
+			if diff := cmp.Diff(tt.tc, unmarshalled); diff != "" {
+				t.Errorf("Roundtrip mismatch (-want +got):\n%s", diff)
+				t.Logf("JSON: %s", string(b))
+			}
+		})
+	}
+}

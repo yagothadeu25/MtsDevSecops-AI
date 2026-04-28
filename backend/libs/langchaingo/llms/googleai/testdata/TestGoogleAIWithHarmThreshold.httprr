@@ -1,0 +1,77 @@
+httprr trace v1
+797 2382
+POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent HTTP/1.1
+Host: generativelanguage.googleapis.com
+User-Agent: langchaingo-httprr
+Content-Length: 477
+Content-Type: application/json
+X-Goog-Api-Client: google-genai-sdk/X.XX.X gl-go/go1.24.1
+X-Goog-Api-Key: test-api-key
+
+{"contents":[{"parts":[{"text":"Tell me about safety features"}],"role":"user"}],"generationConfig":{"candidateCount":1,"maxOutputTokens":2048,"temperature":0.5,"topK":3,"topP":0.95},"safetySettings":[{"category":"HARM_CATEGORY_DANGEROUS_CONTENT","threshold":"BLOCK_NONE"},{"category":"HARM_CATEGORY_HARASSMENT","threshold":"BLOCK_NONE"},{"category":"HARM_CATEGORY_HATE_SPEECH","threshold":"BLOCK_NONE"},{"category":"HARM_CATEGORY_SEXUALLY_EXPLICIT","threshold":"BLOCK_NONE"}]}HTTP/2.0 200 OK
+Content-Length: 2002
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: application/json; charset=UTF-8
+Date: Fri, 23 Jan 2026 22:51:25 GMT
+Server: scaffolding on HTTPServer2
+Server-Timing: gfet4t7; dur=1978
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 0
+
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, let's talk about safety features! To give you the most relevant information, I need a little more direction.  Could you tell me what kind of safety features you're interested in?  For example, are you interested in:\n\n*   **Car Safety Features?** (e.g., airbags, ABS, lane departure warning)\n*   **Home Safety Features?** (e.g., smoke detectors, security systems, fire extinguishers)\n*   **Workplace Safety Features?** (e.g., machine guards, safety training, personal protective equipment)\n*   **Website Safety Features?** (e.g., firewalls, encryption, two-factor authentication)\n*   **Product Safety Features?** (e.g., childproof packaging, thermal cutoffs, grounding)\n*   **General Safety Tips?** (e.g., first aid, emergency preparedness)\n\nOnce you provide more details, I can give you a comprehensive overview of the safety features you're interested in."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "safetyRatings": [
+        {
+          "category": "HARM_CATEGORY_HATE_SPEECH",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_HARASSMENT",
+          "probability": "NEGLIGIBLE"
+        },
+        {
+          "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+          "probability": "NEGLIGIBLE"
+        }
+      ],
+      "avgLogprobs": -0.19741936449734671
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 5,
+    "candidatesTokenCount": 212,
+    "totalTokenCount": 217,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 5
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 212
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "a_tzaeuzB7jSjMcPpp24gQ4"
+}

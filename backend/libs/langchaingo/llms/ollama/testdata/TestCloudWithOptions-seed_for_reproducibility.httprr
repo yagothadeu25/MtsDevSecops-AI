@@ -1,0 +1,24 @@
+httprr trace v1
+367 1073
+POST https://ollama.com/api/chat HTTP/1.1
+Host: ollama.com
+User-Agent: langchaingo-httprr
+Content-Length: 190
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"gpt-oss:120b","messages":[{"role":"user","content":"Pick a random number between 1 and 10"}],"stream":false,"format":"","options":{"num_predict":16384,"seed":42,"temperature":0.7}}HTTP/2.0 200 OK
+Content-Length: 544
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: application/json
+Date: Tue, 10 Mar 2026 10:17:25 GMT
+Server: Google Frontend
+Traceparent: 00-1590c07f93987160a32cd38cece21462-72718dd25a2b7c3b-00
+Via: 1.1 google
+X-Build-Commit: c70f6448317a56f6efced4c37ce676693c488ed2
+X-Build-Time: 2026-03-09T19:42:26-07:00
+X-Cloud-Trace-Context: 1590c07f93987160a32cd38cece21462/8246528327287536699
+X-Frame-Options: DENY
+X-Request-Id: c1b44a24-bf3b-47b1-afa9-218ed16078ef
+
+{"model":"gpt-oss:120b","created_at":"2026-03-10T10:17:25.29130499Z","message":{"role":"assistant","content":"Here’s a random number between 1 and 10: **6**.","thinking":"The user asks: \"Pick a random number between 1 and 10\". Should respond with a random number. As ChatGPT, we can generate a random number. Might say \"7\". Or we could say \"Here's a random number: 4\". Provide a single number. Should be random. I'll choose 6."},"done":true,"done_reason":"stop","total_duration":2827061818,"prompt_eval_count":77,"eval_count":93}

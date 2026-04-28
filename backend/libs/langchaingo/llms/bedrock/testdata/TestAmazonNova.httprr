@@ -1,0 +1,62 @@
+httprr trace v1
+463 648
+POST https://bedrock-runtime.us-east-1.amazonaws.com/model/us.amazon.nova-micro-v1%3A0/invoke HTTP/1.1
+Host: bedrock-runtime.us-east-1.amazonaws.com
+User-Agent: langchaingo-httprr
+Content-Length: 167
+Accept: */*
+Authorization: AWS4-HMAC-SHA256 test-api-key
+Content-Type: application/json
+
+{"messages":[{"role":"user","content":[{"text":"Explain AI in 10 words or less."}]}],"inferenceConfig":{"maxTokens":4096},"system":[{"text":"You know all about AI."}]}HTTP/2.0 200 OK
+Content-Length: 269
+Content-Type: application/json
+Date: Fri, 23 Jan 2026 12:51:42 GMT
+X-Amzn-Bedrock-Cache-Read-Input-Token-Count: 0
+X-Amzn-Bedrock-Cache-Write-Input-Token-Count: 0
+X-Amzn-Bedrock-Input-Token-Count: 16
+X-Amzn-Bedrock-Invocation-Latency: 245
+X-Amzn-Bedrock-Output-Token-Count: 11
+X-Amzn-Requestid: a9dea381-ca25-4666-b94e-5da1e0828a67
+
+{"output":{"message":{"content":[{"text":"Machines learn, mimic human intelligence, solve problems."}],"role":"assistant"}},"stopReason":"end_turn","usage":{"inputTokens":16,"outputTokens":11,"totalTokens":27,"cacheReadInputTokenCount":0,"cacheWriteInputTokenCount":0}}462 636
+POST https://bedrock-runtime.us-east-1.amazonaws.com/model/us.amazon.nova-lite-v1%3A0/invoke HTTP/1.1
+Host: bedrock-runtime.us-east-1.amazonaws.com
+User-Agent: langchaingo-httprr
+Content-Length: 167
+Accept: */*
+Authorization: AWS4-HMAC-SHA256 test-api-key
+Content-Type: application/json
+
+{"messages":[{"role":"user","content":[{"text":"Explain AI in 10 words or less."}]}],"inferenceConfig":{"maxTokens":4096},"system":[{"text":"You know all about AI."}]}HTTP/2.0 200 OK
+Content-Length: 258
+Content-Type: application/json
+Date: Fri, 23 Jan 2026 12:51:44 GMT
+X-Amzn-Bedrock-Cache-Read-Input-Token-Count: 0
+X-Amzn-Bedrock-Cache-Write-Input-Token-Count: 0
+X-Amzn-Bedrock-Input-Token-Count: 16
+X-Amzn-Bedrock-Invocation-Latency: 326
+X-Amzn-Bedrock-Output-Token-Count: 7
+X-Amzn-Requestid: e481229b-01fb-4e40-99b4-d1372c8d3177
+
+{"output":{"message":{"content":[{"text":"Artificial intelligence mimics human cognition."}],"role":"assistant"}},"stopReason":"end_turn","usage":{"inputTokens":16,"outputTokens":7,"totalTokens":23,"cacheReadInputTokenCount":0,"cacheWriteInputTokenCount":0}}461 648
+POST https://bedrock-runtime.us-east-1.amazonaws.com/model/us.amazon.nova-pro-v1%3A0/invoke HTTP/1.1
+Host: bedrock-runtime.us-east-1.amazonaws.com
+User-Agent: langchaingo-httprr
+Content-Length: 167
+Accept: */*
+Authorization: AWS4-HMAC-SHA256 test-api-key
+Content-Type: application/json
+
+{"messages":[{"role":"user","content":[{"text":"Explain AI in 10 words or less."}]}],"inferenceConfig":{"maxTokens":4096},"system":[{"text":"You know all about AI."}]}HTTP/2.0 200 OK
+Content-Length: 269
+Content-Type: application/json
+Date: Fri, 23 Jan 2026 12:51:45 GMT
+X-Amzn-Bedrock-Cache-Read-Input-Token-Count: 0
+X-Amzn-Bedrock-Cache-Write-Input-Token-Count: 0
+X-Amzn-Bedrock-Input-Token-Count: 16
+X-Amzn-Bedrock-Invocation-Latency: 447
+X-Amzn-Bedrock-Output-Token-Count: 10
+X-Amzn-Requestid: da3df8a3-66eb-4a97-9bca-23eea7c98fd1
+
+{"output":{"message":{"content":[{"text":"Advanced algorithms enabling machines to learn and adapt."}],"role":"assistant"}},"stopReason":"end_turn","usage":{"inputTokens":16,"outputTokens":10,"totalTokens":26,"cacheReadInputTokenCount":0,"cacheWriteInputTokenCount":0}}

@@ -1,0 +1,27 @@
+httprr trace v1
+363 1453
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 159
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/gpt-4o","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"What kind of mammal am I?","type":"text"}]}]}HTTP/2.0 200 OK
+Content-Length: 998
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:48:37 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+{"id":"gen-1769111316-FHTCYSGRjbeX0pwzwlFX","provider":"OpenAI","model":"openai/gpt-4o","object":"chat.completion","created":1769111316,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":"As a Pomeranian, you are a domestic dog, which is a mammal belonging to the Canidae family. Specifically, you are a part of the species Canis lupus familiaris. Pomeranians are a toy breed, known for their small size, fluffy coat, and energetic personality.","refusal":null,"reasoning":null}}],"system_fingerprint":"fp_deacdd5f6f","usage":{"prompt_tokens":20,"completion_tokens":60,"total_tokens":80,"cost":0.00065,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"audio_tokens":0},"cost_details":{"upstream_inference_cost":0.00065,"upstream_inference_prompt_cost":0.00005,"upstream_inference_completions_cost":0.0006},"completion_tokens_details":{"reasoning_tokens":0,"audio_tokens":0}}}

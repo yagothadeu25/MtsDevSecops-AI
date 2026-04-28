@@ -1,0 +1,1087 @@
+httprr trace v1
+431 158165
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 227
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"mistralai/mistral-nemo","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"Tell me more about my taxonomy","type":"text"}]}],"stream":true,"stream_options":{"include_usage":true}}HTTP/2.0 200 OK
+Content-Length: 157681
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache
+Content-Type: text/event-stream
+Date: Thu, 22 Jan 2026 19:57:34 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+: OPENROUTER PROCESSING
+
+: OPENROUTER PROCESSING
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Hello"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"!"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" I"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"'m"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" delighted"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" to"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" help"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" you"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" explore"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" your"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" taxonomy"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" as"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Pomer"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"anian"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Here"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"'s"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" breakdown"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" of"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" your"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" classification"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"1"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"King"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"dom"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Animal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" kingdom"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" that"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" all"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" animals"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" heter"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ot"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"rophy"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" ("},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ob"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"taining"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" energy"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" consuming"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" other"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" organisms"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":")"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" possession"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" of"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" nervous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" system"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"2"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Ph"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ylum"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Ch"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ord"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ata"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" ph"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ylum"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" animals"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" with"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" not"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"och"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ord"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dorsal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+: OPENROUTER PROCESSING
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" hollow"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" nerve"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" cord"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" ("},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"which"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" develops"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" into"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" brain"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" spinal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" cord"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"),"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" ph"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"aryngeal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" g"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ill"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sl"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"its"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" post"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"-anal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" tail"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" at"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" some"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" point"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" in"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" their"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" life"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" cycle"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"3"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Class"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Mamm"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"alia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Mamm"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"als"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" presence"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" of"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" mammary"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" glands"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" to"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" produce"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" milk"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" for"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" their"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" young"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" hair"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" or"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" fur"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" four"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"-ch"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"amber"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ed"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" heart"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"4"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ora"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" animals"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" that"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" primarily"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"orous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" but"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" many"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" have"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" evolved"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" to"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" have"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" omn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"orous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" diets"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" They"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" having"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sweat"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" glands"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" jaw"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" joint"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" that"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" allows"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" for"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" side"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"-to"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"-side"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" movement"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ass"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ial"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" pair"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" of"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" teeth"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" for"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" she"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"aring"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" meat"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"5"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Sub"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iform"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sub"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" animals"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" with"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dog"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"-like"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" form"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" such"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" as"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dogs"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" wolves"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" fo"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"xes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" bears"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" They"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" having"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" long"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"out"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" four"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" toes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" on"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" each"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" foot"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"orous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" diet"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"6"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Family"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"idae"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" family"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dogs"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" wolves"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" fo"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"xes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" co"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"y"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"otes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" other"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" related"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" species"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" They"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" having"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" long"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"out"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" four"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" toes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" on"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" each"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" foot"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"orous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" diet"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"7"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Gen"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"us"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" genus"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dogs"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" wolves"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" co"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"y"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"otes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" other"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" related"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" species"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" They"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" characterized"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" by"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" having"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" long"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" sn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"out"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" four"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" toes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" on"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" each"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" foot"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"orous"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" diet"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"8"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Species"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" lupus"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" familiar"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" This"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" scientific"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" name"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" for"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" domestic"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dog"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" which"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" includes"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" breeds"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" like"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" the"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Pomer"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"anian"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" The"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" species"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" name"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" '"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"famil"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iar"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"'"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" means"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" '"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"dom"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"estic"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"'"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" or"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" '"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"t"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ame"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"'.\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"9"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" **"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Bre"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ed"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"**:"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Pomer"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"anian"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" -"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" The"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Pomer"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"anian"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" a"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" small"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" breed"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" of"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" dog"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" that"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" was"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" developed"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" in"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Germany"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Poland"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"."},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" They"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" are"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" known"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" for"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" their"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" long"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" fl"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"uffy"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" coats"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" and"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" small"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" size"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":".\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"So"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" in"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" summary"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":","},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" your"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" full"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" taxonomic"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" classification"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":\n\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"King"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"dom"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Animal"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Ph"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ylum"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Ch"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ord"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ata"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Class"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Mamm"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"alia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Carn"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iv"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ora"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Sub"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"order"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"iform"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ia"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Family"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"idae"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Gen"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"us"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Species"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Can"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" lupus"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" familiar"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"is"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"\n"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"Bre"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"ed"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":":"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":" Pomer"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":"anian"},"finish_reason":null,"native_finish_reason":null,"logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"finish_reason":"stop","native_finish_reason":"stop","logprobs":null}]}
+
+data: {"id":"gen-1769111854-mNx0q3tnNlDRJKOVn2Lj","provider":"DeepInfra","model":"mistralai/mistral-nemo","object":"chat.completion.chunk","created":1769111854,"choices":[{"index":0,"delta":{"role":"assistant","content":""},"finish_reason":null,"native_finish_reason":null,"logprobs":null}],"usage":{"prompt_tokens":17,"completion_tokens":527,"total_tokens":544,"cost":0.00002142,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":null,"upstream_inference_prompt_cost":3.4e-7,"upstream_inference_completions_cost":0.00002108},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0}}}
+
+data: [DONE]
+

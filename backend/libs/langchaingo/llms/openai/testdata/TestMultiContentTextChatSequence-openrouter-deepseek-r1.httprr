@@ -1,0 +1,77 @@
+httprr trace v1
+402 4416
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 198
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"deepseek/deepseek-r1","messages":[{"role":"user","content":"Name some countries"},{"role":"assistant","content":"Spain and Lesotho"},{"role":"user","content":"Which if these is larger?"}]}HTTP/2.0 200 OK
+Content-Length: 3960
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:57:02 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111820-VPVG8LlCWSfHK2UQUW55","provider":"Novita","model":"deepseek/deepseek-r1","object":"chat.completion","created":1769111820,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":"**Spain is significantly larger than Lesotho.** Here's a breakdown:\n\n1.  **Spain:** Located in southwestern Europe, Spain has an area of approximately **505,990 square kilometers (195,360 square miles)**.\n2.  **Lesotho:** A small landlocked country entirely surrounded by South Africa, Lesotho has an area of approximately **30,355 square kilometers (11,720 square miles)**.\n\n**Key Comparison:**\n\n*   Spain is roughly **17 times larger** than Lesotho in land area.\n*   Lesotho is one of the smallest countries in Africa, while Spain is one of the larger countries in Europe.\n\n**Therefore, Spain is the much larger country.**","refusal":null,"reasoning":"Okay, the user asked which of the two countries mentioned earlier—Spain or Lesotho—is larger. They're probably trying to understand the size difference between these two nations. Let me recall that Spain is in Europe, while Lesotho is a small country in southern Africa. I remember that Lesotho is entirely surrounded by South Africa, which might give a clue about its size. \n\nThe user might not be familiar with either country's geography, so explaining the contrast clearly is important. They could be a student working on homework, a traveler planning a trip, or someone casually curious. The deeper need here might be to grasp how vastly different countries can be in size, or maybe they're comparing regions for research or personal interest. \n\nI should emphasize the huge difference to make it clear—like Spain being over 100 times bigger. Also, mentioning Lesotho's unique status as an enclave adds context. No need for complex details; just a straightforward comparison with a memorable fact. That should answer their question effectively and maybe spark more curiosity about geography.\n","reasoning_details":[{"format":null,"index":0,"type":"reasoning.text","text":"Okay, the user asked which of the two countries mentioned earlier—Spain or Lesotho—is larger. They're probably trying to understand the size difference between these two nations. Let me recall that Spain is in Europe, while Lesotho is a small country in southern Africa. I remember that Lesotho is entirely surrounded by South Africa, which might give a clue about its size. \n\nThe user might not be familiar with either country's geography, so explaining the contrast clearly is important. They could be a student working on homework, a traveler planning a trip, or someone casually curious. The deeper need here might be to grasp how vastly different countries can be in size, or maybe they're comparing regions for research or personal interest. \n\nI should emphasize the huge difference to make it clear—like Spain being over 100 times bigger. Also, mentioning Lesotho's unique status as an enclave adds context. No need for complex details; just a straightforward comparison with a memorable fact. That should answer their question effectively and maybe spark more curiosity about geography.\n"}]}}],"system_fingerprint":"","usage":{"prompt_tokens":21,"completion_tokens":352,"total_tokens":373,"cost":0.0008947,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":null,"upstream_inference_prompt_cost":0.0000147,"upstream_inference_completions_cost":0.00088},"completion_tokens_details":{"reasoning_tokens":212,"image_tokens":0}}}

@@ -1,0 +1,15 @@
+httprr trace v1
+389 2084
+POST http://localhost:11434/api/chat HTTP/1.1
+Host: localhost:11434
+User-Agent: langchaingo-httprr
+Content-Length: 203
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"qwen3:8b","messages":[{"role":"user","content":"How many feet are in a nautical mile? Respond with JSON containing the answer."}],"stream":false,"format":"json","options":{"num_predict":16384}}HTTP/1.1 200 OK
+Content-Length: 1959
+Content-Type: application/json; charset=utf-8
+Date: Tue, 10 Mar 2026 10:19:05 GMT
+
+{"model":"qwen3:8b","created_at":"2026-03-10T10:19:05.921166Z","message":{"role":"assistant","content":"{\n  \"nautical_mile_to_feet\": 6076.12\n}","thinking":"Okay, the user is asking how many feet are in a nautical mile. I need to recall the conversion between nautical miles and feet. Let me think.\n\nI remember that a nautical mile is based on the Earth's circumference. Specifically, one nautical mile is defined as one minute of arc along a great circle. Since there are 60 minutes in a degree and 360 degrees in a circle, the total number of minutes in a circle is 360 * 60 = 21,600 minutes. The Earth's circumference is approximately 21,600 nautical miles. \n\nBut wait, the exact definition might be different. I think the international nautical mile is exactly 1,852 meters. To convert meters to feet, I know that 1 meter is approximately 3.28084 feet. So multiplying 1,852 meters by 3.28084 should give the number of feet in a nautical mile. Let me do that calculation.\n\n1,852 * 3.28084 equals... Let me compute that. 1,852 * 3 is 5,556. Then 1,852 * 0.28084. Let's break it down. 1,852 * 0.2 = 370.4, 1,852 * 0.08 = 148.16, 1,852 * 0.00084 ≈ 1.55568. Adding those together: 370.4 + 148.16 = 518.56 + 1.55568 ≈ 520.11568. So total feet would be 5,556 + 520.11568 ≈ 6,076.11568 feet. \n\nBut I should check if there's a standard value. I think the commonly accepted value is 6,076.12 feet. So the answer should be approximately 6,076.12 feet in a nautical mile. Let me confirm with another method. Since 1 nautical mile is 1.852 kilometers, and 1 kilometer is 3,280.84 feet, so 1.852 * 3,280.84 = same as before. Yes, that gives around 6,076.12 feet. \n\nTherefore, the answer is 6,076.12 feet. I should present this in a JSON format as requested.\n"},"done":true,"done_reason":"stop","total_duration":20969259333,"load_duration":123151083,"prompt_eval_count":618,"prompt_eval_duration":1778002750,"eval_count":22,"eval_duration":457611878}

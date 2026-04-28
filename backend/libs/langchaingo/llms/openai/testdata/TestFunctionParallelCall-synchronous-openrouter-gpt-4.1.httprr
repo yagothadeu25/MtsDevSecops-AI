@@ -1,0 +1,23 @@
+httprr trace v1
+933 1475
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 729
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/gpt-4.1","messages":[{"role":"user","content":"What are the weather and time in Boston, MA?"}],"tools":[{"type":"function","function":{"name":"getCurrentWeather","description":"Get the current weather in a given location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The city and state, e.g. San Francisco, CA"},"unit":{"type":"string","enum":["celsius","fahrenheit"]}},"required":["location"]}}},{"type":"function","function":{"name":"getCurrentTime","description":"Get the current time in a given location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The city and state, e.g. San Francisco, CA"}},"required":["location"]}}}]}HTTP/2.0 200 OK
+Content-Length: 1019
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:58:39 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+{"id":"gen-1769111919-8aJA3yLAaRBxfQylXYQ4","provider":"OpenAI","model":"openai/gpt-4.1","object":"chat.completion","created":1769111919,"choices":[{"logprobs":null,"finish_reason":"tool_calls","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"","refusal":null,"reasoning":null,"tool_calls":[{"type":"function","index":0,"id":"call_KOyOLS0oZNyvYtpi9tIbG5ox","function":{"name":"getCurrentWeather","arguments":"{\"location\":\"Boston, MA\",\"unit\":\"celsius\"}"}},{"type":"function","index":1,"id":"call_SsCkW1jx6AQXskpVX6YUqBp4","function":{"name":"getCurrentTime","arguments":"{\"location\":\"Boston, MA\"}"}}]}}],"usage":{"prompt_tokens":57,"completion_tokens":56,"total_tokens":113,"cost":0.000562,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.000562,"upstream_inference_prompt_cost":0.000114,"upstream_inference_completions_cost":0.000448},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0}}}

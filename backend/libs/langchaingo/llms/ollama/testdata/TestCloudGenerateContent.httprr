@@ -1,0 +1,47 @@
+httprr trace v1
+332 890
+POST https://ollama.com/api/chat HTTP/1.1
+Host: ollama.com
+User-Agent: langchaingo-httprr
+Content-Length: 155
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"gpt-oss:120b","messages":[{"role":"user","content":"What is the capital of France?"}],"stream":false,"format":"","options":{"num_predict":16384}}HTTP/2.0 200 OK
+Content-Length: 360
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: application/json
+Date: Tue, 10 Mar 2026 10:17:09 GMT
+Server: Google Frontend
+Traceparent: 00-17b6ade5081d6e49a4b12ada9538238f-af1be9aa88174094-00
+Via: 1.1 google
+X-Build-Commit: c70f6448317a56f6efced4c37ce676693c488ed2
+X-Build-Time: 2026-03-09T19:42:26-07:00
+X-Cloud-Trace-Context: 17b6ade5081d6e49a4b12ada9538238f/12617935699645513876
+X-Frame-Options: DENY
+X-Request-Id: 08097cfc-03cc-4ed7-a177-95a91a2b887d
+
+{"model":"gpt-oss:120b","created_at":"2026-03-10T10:17:09.661345086Z","message":{"role":"assistant","content":"The capital of France is **Paris**.","thinking":"The user asks a simple factual question: capital of France. Answer: Paris. Provide direct answer."},"done":true,"done_reason":"stop","total_duration":575987345,"prompt_eval_count":74,"eval_count":39}
+329 851
+POST https://ollama.com/api/chat HTTP/1.1
+Host: ollama.com
+User-Agent: langchaingo-httprr
+Content-Length: 152
+Accept: application/x-ndjson
+Content-Type: application/json
+
+{"model":"gpt-oss:120b","messages":[{"role":"user","content":"What is 15 multiplied by 7?"}],"stream":false,"format":"","options":{"num_predict":16384}}HTTP/2.0 200 OK
+Content-Length: 321
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Type: application/json
+Date: Tue, 10 Mar 2026 10:17:11 GMT
+Server: Google Frontend
+Traceparent: 00-57e3a21b7665235596f611920b9e1d6a-a97b1b52696348a4-00
+Via: 1.1 google
+X-Build-Commit: c70f6448317a56f6efced4c37ce676693c488ed2
+X-Build-Time: 2026-03-09T19:42:26-07:00
+X-Cloud-Trace-Context: 57e3a21b7665235596f611920b9e1d6a/12212384855314614436
+X-Frame-Options: DENY
+X-Request-Id: 009edafd-1122-4a38-abc5-bde518db248e
+
+{"model":"gpt-oss:120b","created_at":"2026-03-10T10:17:11.5127283Z","message":{"role":"assistant","content":"15 × 7 = **105**.","thinking":"The user asks a simple multiplication. Answer is 105. Provide answer."},"done":true,"done_reason":"stop","total_duration":542183005,"prompt_eval_count":76,"eval_count":37}

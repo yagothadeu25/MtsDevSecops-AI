@@ -1,0 +1,47 @@
+httprr trace v1
+369 5098
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 165
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o4-mini-high","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"What kind of mammal am I?","type":"text"}]}]}HTTP/2.0 200 OK
+Content-Length: 4642
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:48:34 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111314-vGyIv82bVk3E6VkMmAq4","provider":"OpenAI","model":"openai/o4-mini-high","object":"chat.completion","created":1769111314,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"You’re a domestic dog—a placental mammal in the order Carnivora. More specifically:\n\n• Class: Mammalia (warm-blooded, hair-covered, mammary glands)  \n• Infraclass: Eutheria (placental mammals)  \n• Order: Carnivora (meat-eaters and their relatives)  \n• Family: Canidae (dogs, wolves, foxes, etc.)  \n• Genus/species: Canis lupus familiaris (the domestic dog)  \n• Breed: Pomeranian\n\nSo as a Pomeranian, you’re a small-breed member of the dog family (Canidae).","refusal":null,"reasoning":null,"reasoning_details":[{"id":"rs_0bc4ecd4f23650d40169727f128c3881948d7ab8e86b1d2a8f","format":"openai-responses-v1","index":0,"type":"reasoning.encrypted","data":"gAAAAABpcn8W8JFSiZrfa60mucrFcOa7xvSRhWvc1koetGBPrF4GZgR2dyzqp-SxEpLxOE-JzIUETNacRP1tL1d20aM3Ha_zyeBnGwnQQQ10dExkxG3VDnz8stqXImpGA00MRnnRQeAYVvEkKY2WEhPHKkp95pxZ2JojpZrFvNF3QLmRrgk7ywrI3nn2yBv8IqgqJixGIoF4K7io3HzLdHSoLKMP0SjO8AqCv5JkXJojQaTvGrbVm6RcQ8u5kZldO2MPSrg5FHb49U_2yscJ7Ub-MMr1YdAZPo9NglT1HxyTinbyPhM6ce3bxzZNBpBj4CI92bVsayiLa6XjhbR9JaGsBb-R4r5wA1GHGE_K6JqxGvUJsfAujogB1eBxsQvGksaZlg0VTcCqpUUOB_wgx052uK4gK9Ir7opqdcctFEIkLo2HNDRAcqJT6dI71ARVQ5p1HyjIaEnpHJDgSbVdjlX8pBC5BnHcG5Gz0UZeGXFnrkTnZ4T5BKsWctwLIKz6K2hgnzHkdHDtQ4fk4ybbfTvA4mtfGCI8hXIYoWsdXh6Mef37phumqkhB9L-x-ImEt8ca0RRQt7QTuEoGmC7gXH00aLfkzlYGuyuK88Jyk8hjPal1hA5iQJYbdLE9iJokMNEmJzcjNSq0hDvosG1Fq1QLnMwBA_chnLx1oTcLaDLf-HAvM_XcbITQDRugjl7lwNhyfLgU1KLfCCv1m_D094QxUjSGHvgjOmOjTRHhdOq8OR1JnlhFt4w_fyIbgIo7a9t8gnSznrAXu3Rp0ft-L8JHRKLWP86sX1v_FRcPHVN64iZCaxfVM-QNOapSIDdGggsCgCy1yM7Lfm_rUAxrsRZLDiUASFAt1GmWGyAsue-qB7EBPdLf3tGJXTasvJ-4BAZ3jIPibqI_tbjRYMYDk8IXZdwKjANGMCsLxXoY3wxvFEZzhzPduIcuyNhYL8Y5X_PsPfx62QKG9_FilCqqp88beim9fzPEyZ3wtEtUX2--XltFBrFxtC25lZcpmkVlyCPA3crBZieR7zhAIS4WeJBiZUuR7qZqQg-4BSb96McyxqcXJmIQ-lvaMhjyMp2zRKs9vllS5m5cKd-n-ApsaofVqY2HPLn1OEE8LQYO48lGXPBZ6KNy1NlE_9BX__d8-fe7KYYjbQEGno8d_hdiPKymWp-DpoUege1dN677T6RPOBxMnm6u9o_aAIhW8F02Sy789IVaBKt1kfPnDFG-kmiGsEhp-S6TKuDOjDThbT6S1-4wxduf3KHRqQMzPOrPJ8eKxNRRXj2gMrx6LobeBDtYQO2L_e22VjfLIQx-Lsla0kCk5qqw2HXd_Qw9Itg50L8_box-32S60332Le7vByrTcDGBtLyQYbsT5i-smLBkJm43QfzC6qBeL_fVaSTv3zF3_nO7AeFCx0TJrbkfVVqP05D_DUN7wCAhQaCYJo1MyF5V2A2ATR2VCznIUuCKEy4h2FSfo46JKQdWPt5IQV5Urf2X2tEWXzymYPReFuseLVVQSVwQYiOxUwCTEnRTnk8Mu8dBgkiNqsr19_NKfOEquHe-WRwTCC3v7IWPLsNlxEavceV6fpx63EltqEV1sU5R1b_P7c7LTdGSt8_9eUZbsUpx4ApDKmm-jzmcrBP-w4ULKywceVPTpfN2BGESCD5H6sUQsbzV80DRgzwdpZhXlGSY-RWHUzkZ6N1R_2CLCXHpDn6ix-Lc2amhvbRsjs1gbJZtQSNNgXQjWt9lGSgkDwulk_e48h1Enfl2jSj2HSvfms8xXqMD84LLDBCrx6aqKYHNP7IDOjy9v4MyMgIfF3lrtDwOpdMAcCeG_SbJta-Y0VI9laWbCsRgmSwIuc19vuczSskVk_PoeQG2hFkajNIc8ApuJK_tzF9ya2_wMsKOYL5gcHBk5ENnoQoaS18bTkb-QtGY44VovYYAnv_UKjMi7uUSJmzRESi5biQt_jQrRs9B6g1iDbDeXyRqNGnGr-XDDLCHqQEfwjYN6yg-PvzeSwf18QjQtxLmkoWizidHE7Z9KbvtfAbuFSyYb8JC2vmDsZr1htVxax7E3wn8eURUZrt6jNQbk7l0lh7Z8yQCkYwQ23PyHZOsMhCFlPBLI_W7bDuEV5zTDnRjAVK0rxgdde-qTcUa4-AGPIEjPK4_8kkEKwQkA0_8U2oBgPIzp0LG5ZEFOvBiINpQ8Sj68pOTVxGActI5yYIsWj2F2x8ieXPOP3dO69lam6efG-OU62VYBDuL3zi6h9MqMzua1_RFJyT074zzkQ3dWAqf8tn98sKiFATqysEEcetqF5t0QIY9oGPnv8x-vARQXOPDHwnnp_NPzwn0mAc5PdQv_4prsxKlsc0tXXaG7QpT8cBLp1u27u8RpFEypbOdt-7TWnVjTckedHWtqZwZlshIjiPjSsH34lpGwGN1M0bgRz9FOgj3GtpUb6Y1dk7ioAEmBRQiciWMGJePYlCNYYjx_OgfHmwwh5o9SS0NkUVHd1u9HgA3B3iAOZq1fV0T8dkxfE7UHiDgshe9mQ-7U-OSGiVC7-ALYslFsmiJAe4GbCCA14DJguRyIyd3GIu93aXKWefvdDDwg51s9aNu57-YlnzDwqZi24b-7kAYSwk-dzif44dfs1kqe1J3VgU1WHFn1CWDtBjCd1ocZDhX2g73rf4gdidWE_Sl_T9kKceNWIb04dLVT1k2le37mM7dLsD2F2I9V5RESVxM0kl9ZXbLlzjlWtimxiS029iAllpdCEBp75bQUanmeO-mdDK71wdeqQ75rWhL4QCLO7Owqpg8WC0RtmCJeu93Rdajp-CK8ivzAbRoJA_jeAyj0vd5D_M-sWxmCylpCPcYnGD7QbtmNw3Nwu8cV37ic_Vm-UYwx_azRs7tQ8IDyNW0r4KAH0vRIoReeAG7TKM8Vj0cb_A2G0-Pb0UppGHqckPQYm8dkpAiUBRuRnmZOB1g1Jg_PbJSBYRH3aGctayf0AgvlEx74-5HD3pqn28mC594dJsz_fZA0rt_woJ1DdJ5hFIargnlHTlKT44zg7JRpbPcKH15ptpl9H__LLM3IgZArHOVT9zT32JU_CytuFepIC-i7psGlXjTgmwAzKLrjbfCJyIqO5cufccXI2LXhvu8ZjAD-c1b07WxawtVpYoyKYRBcEdqcypOCLYiHQ=="}]}}],"usage":{"prompt_tokens":19,"completion_tokens":523,"total_tokens":542,"cost":0.0023221,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0023221,"upstream_inference_prompt_cost":0.0000209,"upstream_inference_completions_cost":0.0023012},"completion_tokens_details":{"reasoning_tokens":384,"image_tokens":0}}}

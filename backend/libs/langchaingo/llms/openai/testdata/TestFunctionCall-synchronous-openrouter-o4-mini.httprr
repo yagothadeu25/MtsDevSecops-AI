@@ -1,0 +1,27 @@
+httprr trace v1
+656 2663
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 452
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o4-mini","messages":[{"role":"user","content":"What is the weather like in Boston, MA?"}],"tools":[{"type":"function","function":{"name":"getCurrentWeather","description":"Get the current weather in a given location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The city and state, e.g. San Francisco, CA"},"unit":{"type":"string","enum":["celsius","fahrenheit"]}},"required":["location"]}}}]}HTTP/2.0 200 OK
+Content-Length: 2207
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:58:21 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+{"id":"gen-1769111901-wKEvGuHiER0ILjCwiYTg","provider":"OpenAI","model":"openai/o4-mini","object":"chat.completion","created":1769111901,"choices":[{"logprobs":null,"finish_reason":"tool_calls","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"","refusal":null,"reasoning":null,"tool_calls":[{"type":"function","index":0,"id":"call_3EyJnTQSSk5ElOkDh1lESKT2","function":{"name":"getCurrentWeather","arguments":"{\"location\":\"Boston, MA\",\"unit\":\"fahrenheit\"}"}}],"reasoning_details":[{"id":"rs_065d6eccb560c4c1016972815df8fc81939874316896b843ce","format":"openai-responses-v1","index":0,"type":"reasoning.encrypted","data":"gAAAAABpcoFezFDR0i9EzcT7WFUcW7e0Z_-56vYjMYGg5CSMfXvyLTptZjA3_t1rm1-e8muUubK4KFb8dxcjDT4_EyMxvxE3OO5HOEg5vof-Xn2DE4sdxZyNOYaG1rAfzMlqun7fDWY63rH1stYmWSGYDTFdPAwM0-TI4AcbltqhGHfmau5KZHTG7tjXzoZtmQ61nE2Q8n0jEwmfSI9dbgC7uN248Wc_JGK-vdT9GlO-svh2hhaeIWtHQriMSdaix0NcqbYt7z7QxGgZqwn0NB4wsOO_RRpOTfWyBxCyZIsQ33-9LTyQyRXY5viZxlrwcfRz6UgMeY5T34puFT5N-9V-Lh0F6nY3xiTgG-jJ3H_g1jgGbo47T_RYC53fdH-Bpg6jmA1Lc-d-lOLtgCYlMDTPLmf3kWVbD-N1_d0HYLXE_CBWfd_XqZYq61oQxaeunYu_zS0TTERvwwVOEG3C93h3S5UEVOPtDjeTfjt8r7OWdyJqcET4BD7BRfbdlY3Ed-9x5E-18LdggDIZ2KgOTruTTTgxyV0g7KqSup2sWIqpJsefMaENvNOyac5NupyjNFGUM6Emu4Qlzfw62lRzItQRB6uOrRR75Jx3Fljm687RxF3f2cmFfBvopEmEt31sgtdOZVIc4uMsZiuEgIUXdqxEzLi2_JD93sK_MVrRTM3dg1IbD9TZSwORc44erewI9pNLBwt--rOvgR8d4zmqDQOnaVAc8ytsxTKspbAfEbY209FopL1n331JZsCudSZxREu7PhpSPWwmIMisfrgq1yqRRJRVykL8XaKu-tUewOavq6RwGrNbIDrQioRkuIyUaw1sy1svPA5kRU-ocD3r3zKGVhFGvuIBtG1WxuD7lyxHyjOVUdEa7Z5Sk8atji40W03SYwn-XnzShi6-yzXbJjU4Tlnn-Yc_LvKNjNTQxB4xaaKsSWzuzYVipTYvkS6ZWrnmaZhv37bfUgTYfX0IYkp9eZ_GCvDKXNC-JEakILnv71_9ZZBK-ET7HAclPwVwEKvHTjr7RrcZustZt9KpQxeAUjYIpTcWvChs-Zo_wi35XTazi8muNJ8QdDfZwTUGLiuPBQ4WGVs0VkcYSgkBSRapdFIg5mciStdPRscuZ-wzoV-FRIz3j5E="}]}}],"usage":{"prompt_tokens":78,"completion_tokens":28,"total_tokens":106,"cost":0.000209,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.000209,"upstream_inference_prompt_cost":0.0000858,"upstream_inference_completions_cost":0.0001232},"completion_tokens_details":{"reasoning_tokens":0,"image_tokens":0}}}

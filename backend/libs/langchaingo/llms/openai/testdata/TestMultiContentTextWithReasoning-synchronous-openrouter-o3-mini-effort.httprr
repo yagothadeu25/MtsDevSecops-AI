@@ -1,0 +1,39 @@
+httprr trace v1
+399 1591
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 195
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o3-mini","messages":[{"role":"user","content":"What is the factorial of 5? Show your work. Think before you answer."}],"max_completion_tokens":8192,"reasoning":{"effort":"high"}}HTTP/2.0 200 OK
+Content-Length: 1135
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:50:01 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111401-EJMpLdV73hvXiOo3iXdX","provider":"OpenAI","model":"openai/o3-mini","object":"chat.completion","created":1769111401,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"To calculate the factorial of 5 (written as 5!), you multiply 5 by every positive integer less than it:\n\nStep 1: Write the expression: \n  5! = 5 × 4 × 3 × 2 × 1\n\nStep 2: Compute the multiplication step by step:\n  First, 5 × 4 = 20\n  Then, 20 × 3 = 60\n  Next, 60 × 2 = 120\n  Finally, 120 × 1 = 120\n\nTherefore, 5! equals 120.","refusal":null,"reasoning":null}}],"usage":{"prompt_tokens":23,"completion_tokens":319,"total_tokens":342,"cost":0.0014289,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0014289,"upstream_inference_prompt_cost":0.0000253,"upstream_inference_completions_cost":0.0014036},"completion_tokens_details":{"reasoning_tokens":192,"image_tokens":0}}}

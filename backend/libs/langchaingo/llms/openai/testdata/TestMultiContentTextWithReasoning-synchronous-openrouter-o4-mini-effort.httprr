@@ -1,0 +1,79 @@
+httprr trace v1
+399 7290
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 195
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"openai/o4-mini","messages":[{"role":"user","content":"What is the factorial of 5? Show your work. Think before you answer."}],"max_completion_tokens":8192,"reasoning":{"effort":"high"}}HTTP/2.0 200 OK
+Content-Length: 6834
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:50:00 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111400-Zkbbze8TkESzaYRcOwNS","provider":"OpenAI","model":"openai/o4-mini","object":"chat.completion","created":1769111400,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"completed","index":0,"message":{"role":"assistant","content":"Here’s the definition and step-by-step calculation:\n\nDefinition:  \nn! (n factorial) = 1 × 2 × 3 × … × n\n\nSo for n = 5:  \n5! = 1 × 2 × 3 × 4 × 5\n\nWork the multiplications in order:  \n1 × 2 = 2  \n2 × 3 = 6  \n6 × 4 = 24  \n24 × 5 = 120\n\nTherefore, 5! = 120.","refusal":null,"reasoning":"**Calculating factorial step by step**\n\nThe user wants to know the factorial of 5 and see all the steps involved, so I’ll break that down clearly. First, I’ll define factorial: n! is the product of all positive integers from 1 to n. For 5!, I need to multiply in descending order: \n\nFirst, 5 * 4 equals 20, then 20 * 3 equals 60. Next, 60 * 2 gives 120, and finally, 120 * 1 remains 120. So, I can conclude that 5! = 120, showing all the steps along the way!**Finalizing factorial calculation**\n\nHere’s the final answer for the factorial of 5: 5! = 5 x 4 x 3 x 2 x 1 = 120. For the steps:\n\nStep 1: 5 x 4 = 20  \nStep 2: 20 x 3 = 60  \nStep 3: 60 x 2 = 120  \nStep 4: 120 x 1 = 120  \n\nSo, 5! equals 120. I’ll make sure to define the factorial first: n! = n × (n−1) × ... × 2 × 1. That gives the user clear insight into the calculation!","reasoning_details":[{"format":"openai-responses-v1","index":0,"type":"reasoning.summary","summary":"**Calculating factorial step by step**\n\nThe user wants to know the factorial of 5 and see all the steps involved, so I’ll break that down clearly. First, I’ll define factorial: n! is the product of all positive integers from 1 to n. For 5!, I need to multiply in descending order: \n\nFirst, 5 * 4 equals 20, then 20 * 3 equals 60. Next, 60 * 2 gives 120, and finally, 120 * 1 remains 120. So, I can conclude that 5! = 120, showing all the steps along the way!**Finalizing factorial calculation**\n\nHere’s the final answer for the factorial of 5: 5! = 5 x 4 x 3 x 2 x 1 = 120. For the steps:\n\nStep 1: 5 x 4 = 20  \nStep 2: 20 x 3 = 60  \nStep 3: 60 x 2 = 120  \nStep 4: 120 x 1 = 120  \n\nSo, 5! equals 120. I’ll make sure to define the factorial first: n! = n × (n−1) × ... × 2 × 1. That gives the user clear insight into the calculation!"},{"id":"rs_0d0b1971bd2c013a0169727f68de2c8196a3270d4a5e33b1ad","format":"openai-responses-v1","index":0,"type":"reasoning.encrypted","data":"gAAAAABpcn90f50pzNEI2-FP19y7NlHxR_gNQEqeX5B_HO-t8-V1HGYS5m5ZzdVL8yiJfknIqMIGjz103yxrcfiPTy_0owT_ae4FwVXQ4g_-OCsxD8_WKQtz8OynP8Ikz8SLJ8RQZYVjKdZ1S08lt2hnCHB8BlAhBr_yEyTAHRNpPwf-N15alwCniSchXwN0lpFgNUWJ5EAumlSgsYz3lfEKzHQlNKirnEM14H3ZAVGuHvKNRYdqBzUn5XMUW86uW_MRDpikVvCVFn-wJrNwp4it-mqyiIKPxU4I6upa8An3Y_9MQ6GJSl9SxVYTpEqaZIt40jZPYmITWKX9KW2fPtxZ9bbq1Lk1nE2vWaVC7dB9BxLQWn94OtH8GGltfq-2Nkgt8SKDvnZyFP4uA3m6EysKLrBbQPPpBEnV8PncDHjqxhfznt4j-CYbQZGaE7O8js2KFjvqcVJkKwNc3_xH84vBxHdJQCmwfsrnI0tCEBmqOfGeA88--plAoLTFbdA2bMy-JKdQKYsliu6Nb0ljAxEjQc1Owt-pZ8uviVVzH9xyNaYuwoOyr0Nbv8Mev_BvLVY9QmW6-E2hOvKVtdVS019Itl9OMUSiMphzM296GMbygZZI-J1vE3GskbFRjYh85ScdHbjkT3GQalil_TBS5twMrjaR8pg-r-_iyUWQMYiHieNXX3cDgEWNzlKVhzYFdRjLlDmDfTBvkVMRrW-usVF6WV79MK2Lmcy4UvpScpK2gB2MzSNh_KgIw3si19oKq7e4i4yFt6ohHIcEt4SkV2uu0DXwv4KQeI5qvrB5inAk1uF6F_NoIG3G1qURt0P89ZyMnnNTH5YADRDZ1wMgUsupzOHD76KoUzsCuH96hoWIcoTBfK5A2-U-DQO9gUDTRgWDUUEmb4eldIEQJHLyHxePQ11QzFgfSUnuyGrrQaKZGTYLjB3rnhBPRUlz0qkZqjmxwcJug-3LnDydAcJBW-kRENq_3LYkicGNZgTc0oN6ygYH5Cklcvt4Zj0R5bJ8YTKUaQji97mvWQe-43o0iZS3Vhytc28Gsa46ZGZDJjEeUt28UziwejSU0wQ0pGNjFtlaGgjb0fDgCUAZ_zAtK6msuButMgnclLZSdW6Mcrolday5IvwUkaWJoMFXP5mjDWyQDDW9Ylv1bfZEUmttawmlYqaJO5WpeZRf16Fd18hpURl52HD1vFt1E7zfsukEekllIvRHvlNlEQSmzVpWmpTfaS04rbnBaB6s_YSQJXfe2Hv4DjpOACjlJHifJiPgFzoKPkCion4NMgH6NYUfS5tefFB4xKaaIpp6JDKT8LAXJQ9MgRAgx0rvbNm1-SWc450t_FyGivxIrjqWnxFWk2IaWdlxTtTJrf-IeRt9E510egSOLlZGCA64LoeUJPP7qXsNhdmvay2HDuRrPZKyWnWehHpd-eAw-zm80Q3gPvUIDctOxZZMNj3IBRJELm1AEMN2Mj5x7E2PYBA8_S0C38ICqrEYKiM8HgsZ2uFmNpoISQjFk1O0yZNJ3KAY0PIq6T4xK7_oY7_TZlAJJsqbHgp8Kg1JOizB4z7E4J_4WJtkRO6FCdqn6aSSIGmt2MiA0ze_IKmAOkg3WWYwKK0Dw5tMPicbmVAFJkHk_5mbSySjhW7_mU_is8uHLQJgu58iFfTdLz7VIeihUyVs96L9Q55M5ewGc4X21xKuVGml4ZTIhlMFO-jx8x-TCgqNWp5M84HU2LljIn6QYsWt40LGLsqd5jCIcxIycARoO2Em3fqOFYOgVCTj5w7I32L5eK19Tu41AocMcTsq4CtRkaDEXCTeVeQb6hk-sX2R7U4NG_UtgR2MJM_sxRCZgWGbazM5Rv9i60uxtQ4rkAUPlWy15qD9VCVXV8LL4uE3b405gVYh9igpjGiwfNArfD9bN7tFj6fv--_LgHlbQNtv8AxbXMJPV4PE619Q6AhLW1uGpHTnMmHo_2nCTAeeIdKHlB5l_pK3wzgwq8O1Fm5lyXQ4O16i88K6x8HQr0UuAxMLerAwhLCbLDf8zyIItwzhHqh5GaRH-XQCv86pEBizvllMkbndvF8d2dWoWoVJukQs_7S8vnTf1U04WeUyD79fzILHqP7-6BVd63G21IcCzQfX-P08mpwH2JeyZT0xoi1ncJkrot14PtFOyFKGpKAetk8VDcwf5LpMKMxckBX4XJAY_MuTrBMnjUrmF7UsVPVG0iK_bImrAHS4q7-QYqX8BPXIRQkKp1oio99C85do6zt7I-Nbn0t_O5DBu-ulwPiyuEwmsEwWRA5m3bLqfeFXpYN9hKSN9DMtk_3fz58YSLozAt1fIXuT3wtiK0aKDrFyTSUbuWgSggNhGYLpXsVy6WDfH5IKVPn28-xeNRh4PF3D3N7FZ_BD5bQxk7jeMlfizoEarsJK9MNDHku4gg9FTELU_Sl_7tm-LAsDr04gtzJsqHF2mp2atQBhDZojKRjMwIwah_bQJyFp7cMqSf64w5S-Y6RD4QIB-dsWXF-S183HP9z_D1g8hRpBGR2lCQLgSWtyQjNkBOzqL5HFGOaDWPoT53X3sgQ2nX8ap20UQYTW3cCzAUdFvjTfBdbZjhNtsbhuf5dLxRgx_28-5aTmMghhZjqeEiIxO1NTA5lYMeLO6OXZlbdRa6GmSp_NXVEZ7IahHOLN6PsQ5sYV1QQnovp-Ly9j3LtI1jzPrycp1wjix1rjTwm8rKUBeTh6sAm0KkiLDM_6XamoxIVyrEoSe4u_d618UVFM21cTAvSB-EMNPYpple1VgeJW24_6zPBBtmMGgz54KaufRYrSn2gZ2JLv-lM7SCwrDEnBR-9qwWYeNP4VylUOz1u96F5EJGXHfa1S2TJWba-d1-y6R2MWfDqUY7pwm0BkONvoGbbOISjCg1pYTvQP8GAqvmY_WtP1vP14B20trGcoZphOcKh_I1HWbMFhcrpAcR5hOqAvZaBYD6eB1qf0LJ1dgg-7i8A9ve07TKWt6MhpWrmdL5lbly7QUoB9UPIrT29f57OJBcnAHRtyqfQvud6rMfTBoMF7Wfsi0_5nxtC8gws6jjuwPQiFYX7kJ5AqV_xSqByrnjZIIB8QbJB78tTKqby2R59H7WxW8MHUvkztLbjPS-g6fO9QLCo6xgIvOCYxQjhgjH0wziEc25QW-j1k3QJekXY_1YwvjF9-zgEIUyASvG9Ea_w-f_jDta1IuH3udqNN6NOgx6XGixAQ3F8Jm6047UrpFC_ukGa6m49SR8B1IID7KHaNYzPQ6T2LuORfoKy1xK6g3Hc33jLqxByDKFssbCMTMNNn7O9prx_mCZeFKc2citvlvxYTsXR6LvdhqaF6TlJqgwr5eB94RyNhFEMOdE_bF-ALo3_qEb3C9GG3GS0q9pK0m9GFAapfm9zn-9tKKslmlxr0MVPG7lBHCGfQLqg5oH8fco34l4R8UZzgzbJWu-5FDUGetTk7aswG1poFVlHwdakXQ3yNNK_cY1Qqct6bAY3XJMDvKlu30cEWcFDlbboOYy5nQ7n2LQIju8Uj7OMmIJljimXPOsKYrk4emB1RKncTIzbcmD_yc54MOeE71J1y0c8qM3INcUMA"}]}}],"usage":{"prompt_tokens":23,"completion_tokens":693,"total_tokens":716,"cost":0.0030745,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0},"cost_details":{"upstream_inference_cost":0.0030745,"upstream_inference_prompt_cost":0.0000253,"upstream_inference_completions_cost":0.0030492},"completion_tokens_details":{"reasoning_tokens":576,"image_tokens":0}}}

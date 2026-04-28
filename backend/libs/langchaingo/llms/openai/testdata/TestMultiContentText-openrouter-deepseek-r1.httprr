@@ -1,0 +1,125 @@
+httprr trace v1
+370 6725
+POST https://openrouter.ai/api/v1/chat/completions HTTP/1.1
+Host: openrouter.ai
+User-Agent: langchaingo-httprr
+Content-Length: 166
+Authorization: Bearer test-api-key
+Content-Type: application/json
+
+{"model":"deepseek/deepseek-r1","messages":[{"role":"user","content":[{"text":"I'm a pomeranian","type":"text"},{"text":"What kind of mammal am I?","type":"text"}]}]}HTTP/2.0 200 OK
+Content-Length: 6269
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Thu, 22 Jan 2026 19:48:37 GMT
+Permissions-Policy: payment=(self "https://checkout.stripe.com" "https://connect-js.stripe.com" "https://js.stripe.com" "https://*.js.stripe.com" "https://hooks.stripe.com")
+Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+Server: cloudflare
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+
+         
+{"id":"gen-1769111316-V8iQb6OJXl7jB10Q9jEW","provider":"Novita","model":"deepseek/deepseek-r1","object":"chat.completion","created":1769111316,"choices":[{"logprobs":null,"finish_reason":"stop","native_finish_reason":"stop","index":0,"message":{"role":"assistant","content":"You are a **domestic dog** (*Canis lupus familiaris*), a subspecies of the gray wolf and a member of the **mammalian order Carnivora** (family Canidae). As a Pomeranian, you belong to a small, fluffy toy breed known for your lively personality and distinctive double coat. Key mammal traits you share include:  \n- Hair/fur (your iconic fluffy coat!),  \n- Warm-bloodedness,  \n- Milk production in females to nourish pups,  \n- And being part of a lineage domesticated by humans thousands of years ago.  \n\nFun fact: Pomeranians are named after the Pomerania region (now Poland/Germany) and were bred down in size from larger sled-pulling Spitz-type dogs! 🐾","refusal":null,"reasoning":"Okay, let's see. The user says they're a Pomeranian and wants to know what kind of mammal that is. First, I need to recall what a Pomeranian is. From what I remember, Pomeranians are a breed of dog. They're small, fluffy, and often have a lot of fur around their neck, kind of like a lion's mane.\n\nSo, if they're a dog breed, then the broader classification would be as a dog. Dogs are part of the Canidae family, which includes wolves, foxes, and other canines. The scientific name for domestic dogs is Canis lupus familiaris. That's a subspecies of the gray wolf. So, dogs are domesticated mammals that have been bred over thousands of years for various traits.\n\nThe user might also be interested in knowing more specifics about Pomeranians. They originated from the Pomerania region, which is now part of Poland and Germany. They're part of the toy group because of their small size. Their lifespan, typical characteristics, and maybe their history could be relevant here. But the main question is about their classification as a mammal. \n\nMammals are characterized by having hair or fur, being warm-blooded, and females producing milk for their young. Dogs definitely fit into that category. So, putting it all together, a Pomeranian is a breed of the domestic dog, which is a subspecies of the gray wolf, and thus a member of the mammal class. \n\nWait, but maybe I should check if there's any possibility of confusion. For example, sometimes people might mix up breeds with other species, but no, Pomeranian is definitely a dog breed. Also, verifying the family classification: Canidae is correct. So, the answer should confirm that the user, as a Pomeranian, is a domesticated dog, which is a mammal in the Canidae family. Additionally, mentioning their classification under the order Carnivora might add more depth. \n\nI should also note their role as companion animals and maybe a fun fact about their history or characteristics to make the answer more engaging. Ensuring that the answer is accurate but also accessible, avoiding too much jargon but still providing the necessary scientific terms.\n","reasoning_details":[{"format":null,"index":0,"type":"reasoning.text","text":"Okay, let's see. The user says they're a Pomeranian and wants to know what kind of mammal that is. First, I need to recall what a Pomeranian is. From what I remember, Pomeranians are a breed of dog. They're small, fluffy, and often have a lot of fur around their neck, kind of like a lion's mane.\n\nSo, if they're a dog breed, then the broader classification would be as a dog. Dogs are part of the Canidae family, which includes wolves, foxes, and other canines. The scientific name for domestic dogs is Canis lupus familiaris. That's a subspecies of the gray wolf. So, dogs are domesticated mammals that have been bred over thousands of years for various traits.\n\nThe user might also be interested in knowing more specifics about Pomeranians. They originated from the Pomerania region, which is now part of Poland and Germany. They're part of the toy group because of their small size. Their lifespan, typical characteristics, and maybe their history could be relevant here. But the main question is about their classification as a mammal. \n\nMammals are characterized by having hair or fur, being warm-blooded, and females producing milk for their young. Dogs definitely fit into that category. So, putting it all together, a Pomeranian is a breed of the domestic dog, which is a subspecies of the gray wolf, and thus a member of the mammal class. \n\nWait, but maybe I should check if there's any possibility of confusion. For example, sometimes people might mix up breeds with other species, but no, Pomeranian is definitely a dog breed. Also, verifying the family classification: Canidae is correct. So, the answer should confirm that the user, as a Pomeranian, is a domesticated dog, which is a mammal in the Canidae family. Additionally, mentioning their classification under the order Carnivora might add more depth. \n\nI should also note their role as companion animals and maybe a fun fact about their history or characteristics to make the answer more engaging. Ensuring that the answer is accurate but also accessible, avoiding too much jargon but still providing the necessary scientific terms.\n"}]}}],"system_fingerprint":"","usage":{"prompt_tokens":19,"completion_tokens":600,"total_tokens":619,"cost":0.0015133,"is_byok":false,"prompt_tokens_details":{"cached_tokens":0,"audio_tokens":0,"video_tokens":0},"cost_details":{"upstream_inference_cost":null,"upstream_inference_prompt_cost":0.0000133,"upstream_inference_completions_cost":0.0015},"completion_tokens_details":{"reasoning_tokens":443,"image_tokens":0}}}
